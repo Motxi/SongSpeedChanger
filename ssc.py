@@ -48,7 +48,7 @@ if args.download == True:
         if not os.path.isdir(folder):
             os.mkdir(folder)
 
-        time.sleep(1.5)
+        time.sleep(1)
 
         video.streams.filter(
             only_audio=True,
@@ -96,11 +96,11 @@ if __name__ == '__main__':
 
     handler(change_speed,song,export,rate)
     end_time = time.time()
-
+    
     # Final info
     print('\n===== Song Speed Changer =====')
     print(f'Song: {os.path.basename(song)}')
     print(f'Rate: {rate}x')
     print(f'Path: {path}')
-    print(f'Time: {round(end_time-start_time-1.5, 2)}s ({round(end_time-start_time, 2)}s)')
+    print(f'Time: {round(end_time-start_time, 2)}s')
     print('===== Song Speed Changer =====\n')
