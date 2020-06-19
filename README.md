@@ -1,4 +1,4 @@
-# SongSpeedChanger
+# song-speed-changer
 Automatically change the playback speed of an audio file by providing a YouTube URL or an existing audio file path
 
 ## Installation
